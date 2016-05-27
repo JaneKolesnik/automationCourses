@@ -1,0 +1,23 @@
+1.
+a)	.//*[@id='header']
+b)	.//*[@id='tabs']/*/span[@class='bounty-indicator-tab']
+c)	.//*[contains(@id, 'question-summary')]
+d)	.//*[contains(@id, 'question-summary')]/*/*[contains(a[@class='question-hyperlink'], 'How')] 
+e)	Tag ios
+.//*[contains(a[@rel='tag'], 'ios')]/parent::*
+
+2. 
+.//*/img[contains(@alt, 'Selenium')] | .//*/img[contains(@alt, 'logo')]
+
+3.
+a)	.//*/xhtml:tr[contains(@class, 'locked')]
+b)	.//*[contains(xhtml:span[@class='status-text'], '[Sticky]')]
+	or
+  .//*/xhtml:tr[contains(@class, 'stickied-topic')]
+c)	.//*[contains(@class, 'stickied-topic')][not(contains(@class, 'sort-connect'))][not(contains(@class, 'locked'))]
+
+4.
+following sibligs only
+.//*[@id='navFooter']/div/ul/li[contains(a, 'Germany')]/following-sibling::*
+Germany + following sibling
+.//*[@id='navFooter']/div/ul/li[contains(a, 'Germany')]/following-sibling::* | .//*[@id='navFooter']/div/ul/li[contains(a, 'Germany')]
